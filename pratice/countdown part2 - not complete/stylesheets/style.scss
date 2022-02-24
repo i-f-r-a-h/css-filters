@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+
+}
+
+
+
+.number-1,
+.number-2,
+.number-3 {
+    font-size: 4rem;
+    position: absolute;
+    opacity: 0;
+    animation: count 5s 1s;
+    @keyframes count {
+
+        0%,
+        100% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+    }
+}
+
+.number-2 {
+    animation-delay: 2s;
+}
+
+.number-3 {
+    animation-delay: 3s;
+}

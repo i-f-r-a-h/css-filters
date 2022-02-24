@@ -1,0 +1,71 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 500px;
+    margin-bottom: 100px;
+}
+
+//FILTERS
+
+.greyscale{
+    //this changes it to black and white. It should be a percentage. 0% is default, 100% is black&white
+    filter: grayscale(100%);
+}
+
+.blur {
+    //makes the image fizzy and has to be in px
+    filter: blur(20px);
+}
+
+.brightness{
+    //0% is black, 100% is default image brightness, over 100% is brighter
+    filter: brightness(200%);
+}
+
+
+.contrast{
+    //0% is black, 100% is default contrast, over 100% is less contrast
+    filter: contrast(190%);
+}
+
+.invert{
+    //0% is default image, 100% is completely inverted, no negative values allowed
+    filter: invert(100%);
+}
+
+.opacity{
+    //0% is completely transparent, 100% is the default image
+    filter: opacity(50%);
+}
+
+.saturate{
+    //0% is unsaturated, 100% is the default image, over 100% is super saturated
+    filter: saturate(9000%);
+}
+
+.sepia{
+    //0% is default, 100% is completely sepia
+    filter: sepia(100%);
+}
+
+
+.hue-rotate{
+    //0deg is default, 360deg max, has to be degrees
+    filter: hue-rotate(190deg);
+}
+
+
+.drop-shadow{
+    //this creates a shadow
+    //drop-shadow(horizontal-shadow vertical-shadow blur-spread colour);
+    filter: drop-shadow(18px 10px 6px  blue);
+}
+
+
+.combine{
+    filter: hue-rotate(190deg) drop-shadow(10px 12px 8px #607cd6d2);
+}

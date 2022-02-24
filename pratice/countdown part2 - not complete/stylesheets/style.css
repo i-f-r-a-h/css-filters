@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  height: 100vh;
+}
+
+.number-1,
+.number-2,
+.number-3 {
+  font-size: 4rem;
+  position: absolute;
+  opacity: 0;
+  -webkit-animation: count 5s 1s;
+          animation: count 5s 1s;
+}
+
+@-webkit-keyframes count {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes count {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.number-2 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.number-3 {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+/*# sourceMappingURL=style.css.map */

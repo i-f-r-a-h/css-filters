@@ -1,0 +1,73 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+img {
+  width: 500px;
+  margin-bottom: 100px;
+}
+
+.greyscale {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.blur {
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+}
+
+.brightness {
+  -webkit-filter: brightness(200%);
+          filter: brightness(200%);
+}
+
+.contrast {
+  -webkit-filter: contrast(190%);
+          filter: contrast(190%);
+}
+
+.invert {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.opacity {
+  -webkit-filter: opacity(50%);
+          filter: opacity(50%);
+}
+
+.saturate {
+  -webkit-filter: saturate(9000%);
+          filter: saturate(9000%);
+}
+
+.sepia {
+  -webkit-filter: sepia(100%);
+          filter: sepia(100%);
+}
+
+.hue-rotate {
+  -webkit-filter: hue-rotate(190deg);
+          filter: hue-rotate(190deg);
+}
+
+.drop-shadow {
+  -webkit-filter: drop-shadow(18px 10px 6px blue);
+          filter: drop-shadow(18px 10px 6px blue);
+}
+
+.combine {
+  -webkit-filter: hue-rotate(190deg) drop-shadow(10px 12px 8px #607cd6d2);
+          filter: hue-rotate(190deg) drop-shadow(10px 12px 8px #607cd6d2);
+}
+/*# sourceMappingURL=style.css.map */
